@@ -1,0 +1,21 @@
+{
+  "AnomalyDetectionAlgorithm": {
+    "Enabled": true,
+    "Threshold": 0,
+    "Sensitivity": 90,
+    "BatchSize": 512,
+    "ResultCsvFilePath": "./MLResults",
+    "ExecutionIntervalSeconds": 60,
+    "NotificationEnabled": true,
+    "ResultCsvGenerationEnabled": true,
+    "PredictionDataSize": 10000,
+    "MachineParameters": [
+      {
+        "Id": "Temperature"
+      },
+      {
+        "Id": "Pressure"
+      }
+    ]
+  }
+}

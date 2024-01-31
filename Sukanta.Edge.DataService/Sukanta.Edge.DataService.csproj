@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\DataBus\Sukanta.DataBus.Redis\Sukanta.DataBus.Redis.csproj" />
+    <ProjectReference Include="..\CommonLibrary\DataBus\Sukanta.DataBus\Sukanta.DataBus.Abstraction.csproj" />
+    <ProjectReference Include="..\CommonLibrary\Logging\Sukanta.LoggerLib.csproj" />
+    <ProjectReference Include="..\Sukanta.Edge.ML.Model\Sukanta.Edge.ML.Model.csproj" />
+  </ItemGroup>
+
+</Project>

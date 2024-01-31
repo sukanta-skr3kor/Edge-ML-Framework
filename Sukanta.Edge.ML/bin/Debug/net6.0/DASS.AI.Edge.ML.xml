@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DASS.AI.Edge.ML</name>
+    </assembly>
+    <members>
+        <member name="T:DASS.AI.Edge.RuleEngine.Common.ApiResponse">
+            <summary>
+            General api response class
+            </summary>
+        </member>
+        <member name="P:DASS.AI.Edge.RuleEngine.Common.ApiResponse.IsOk">
+            <summary>
+            Indicates if api execution was successful
+            </summary>
+        </member>
+        <member name="P:DASS.AI.Edge.RuleEngine.Common.ApiResponse.Message">
+            <summary>
+            Any response message
+            </summary>
+        </member>
+        <member name="T:DASS.AI.Edge.RuleEngine.Common.ApiContentResponse`1">
+            <summary>
+            Api response message
+            </summary>
+        </member>
+        <member name="P:DASS.AI.Edge.RuleEngine.Common.ApiContentResponse`1.Content">
+            <summary>
+            Payload of the api
+            </summary>
+        </member>
+        <member name="T:DASS.AI.Edge.RuleEngine.Common.DataValidationException">
+            <summary>
+            Data validation exception
+            </summary>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Common.DataValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            DataValidationException
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Common.DataValidationException.#ctor(System.String)">
+            <summary>
+            DataValidationException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:DASS.AI.Edge.RuleEngine.Common.Extensions">
+            <summary>
+            Extension methods for the adapter service
+            </summary>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Common.Extensions.KnowOperationError(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)">
+            <summary>
+            Send an Not ok result
+            </summary>
+            <param name="controller"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Common.Extensions.OkResponse(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)">
+            <summary>
+            Generates a standard non content ok response
+            </summary>
+            <param name="controller"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Common.Extensions.Ok``1(Microsoft.AspNetCore.Mvc.ControllerBase,``0)">
+            <summary>
+            Generates a standard content response
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="controller"></param>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DASS.AI.Edge.RuleEngine.Program">
+            <summary>
+            Start of program
+            </summary>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Program.Main(System.String[])">
+            <summary>
+            Main entry point
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Program.DisplayFrameworkInformation">
+            <summary>
+            Print RuleEngine Framework Information
+            </summary>
+        </member>
+        <member name="T:DASS.AI.Edge.RuleEngine.Startup">
+            <summary>
+            Startup class
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.RuleEngine.Startup.NOTIFICATION_HUB_PATH">
+            <summary>
+            Notification hub path
+            </summary>
+        </member>
+        <member name="P:DASS.AI.Edge.RuleEngine.Startup.Configuration">
+            <summary>
+            Configurations
+            </summary>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+             <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+             </summary>
+             <param name="services"></param>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:DASS.AI.Edge.RuleEngine.Startup.ConfigureDependencyForServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureServices(DI)
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Common.DataEncrypter.Encrypt(System.String,System.Byte[],System.Byte[])">
+            <summary>
+            Encrypt using AES
+            </summary>
+            <param name="plainText"></param>
+            <param name="Key"></param>
+            <param name="IV"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Common.DataEncrypter.Decrypt(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Decrypt data
+            </summary>
+            <param name="cipherText"></param>
+            <param name="Key"></param>
+            <param name="IV"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Common.DataEncrypter.Encrypt(System.String)">
+            <summary>
+            Encrypt a plain text
+            </summary>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Common.DataEncrypter.Decrypt(System.String)">
+            <summary>
+            Decrypt content
+            </summary>
+            <param name="cipherText"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DASS.AI.Edge.ML.Controllers.MLServiceController">
+            <summary>
+            MLService Controller
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Controllers.MLServiceController._redisDataBus">
+            <summary>
+            RedisDataBus
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Controllers.MLServiceController._settings">
+            <summary>
+             Settings
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Controllers.MLServiceController._dataServiceProvider">
+            <summary>
+            DataServiceProvider
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Controllers.MLServiceController._mlContext">
+            <summary>
+            MLContext
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Controllers.MLServiceController._anomalyDetection">
+            <summary>
+            AnomalyDetection Algorithm Settings
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Controllers.MLServiceController._forecasting">
+            <summary>
+            Forecasting Algorithm Settings
+            </summary>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Controllers.MLServiceController.#ctor(DASS.AI.DataBus.Redis.RedisDataBus,DASS.AI.Edge.DataService.DataServiceProvider,Microsoft.ML.MLContext,Microsoft.Extensions.Options.IOptions{DASS.AI.Edge.ML.Model.AppSettings},Microsoft.Extensions.Options.IOptions{DASS.AI.Edge.ML.Model.AnomalyDetectionAlgorithm},Microsoft.Extensions.Options.IOptions{DASS.AI.Edge.ML.Model.ForecastingAlgorithm})">
+            <summary>
+             MLService Controller
+            </summary>
+            <param name="redisDataBus"></param>
+            <param name="dataServiceProvider"></param>
+            <param name="mLContext"></param>
+            <param name="settings"></param>
+            <param name="anomalyDetectionSettings"></param>
+            <param name="forecastingSettings"></param>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Controllers.MLServiceController.Status">
+            <summary>
+            Rule engine status
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Controllers.MLServiceController.DetectAnomaly(System.String,System.Int32)">
+            <summary>
+            Timeseries anomaly
+            </summary>
+            <param name="parametername"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Controllers.MLServiceController.Forecast(System.String,System.Int32)">
+            <summary>
+            Forecast timeseries data
+            </summary>
+            <param name="parametername"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Controllers.MLServiceController.GetSpikeData(System.String)">
+             <summary>
+            Spike data
+             </summary>
+             <param name="parametername"></param>
+             <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Controllers.MLServiceController.GetChangePointData(System.String)">
+             <summary>
+            changepoint data
+             </summary>
+             <param name="parametername"></param>
+             <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Controllers.MLServiceController.DownLoadResultFile(DASS.AI.Edge.ML.Model.MLAlgorithmType)">
+            <summary>
+             Download result file in csv format
+            </summary>
+            <param name="mlalgorithmtype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Controllers.MLServiceController.UploadModelFile(Microsoft.AspNetCore.Http.IFormFile,DASS.AI.Edge.ML.Model.MLAlgorithmType)">
+            <summary>
+            Upload a pretrained Model file
+            </summary>
+            <param name="formFile"></param>
+            <param name="mlalgorithmtype"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService">
+            <summary>
+            MachineLearning Framework Service
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._resultFileDeletionManagerTask">
+            <summary>
+            Result files Deleteion Task
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._dataServiceProvider">
+            <summary>
+            RuleDataProvider
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._redisDataBusPublisher">
+            <summary>
+            RedisDataBus Publisher 
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._appSettings">
+            <summary>
+            Settings
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._redisDataBus">
+            <summary>
+            RedisDataBus
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._spikeDetection">
+            <summary>
+            SpikeDetection
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._changePointDetection">
+            <summary>
+            ChangePointDetection
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._anomalyDetection">
+            <summary>
+            AnomalyDetection
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._forecastingEngine">
+            <summary>
+            Forecasting
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._anomalyDetectionSettings">
+            <summary>
+            AnomalyDetection Algorithm Settings
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._spikeDetectionSettings">
+            <summary>
+            SpikeDetection Algorithm Settings
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._changePointDetectionSettings">
+            <summary>
+            ChangePointDetection Algorithm Settings
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._forecastingSettings">
+            <summary>
+            Forecasting Algorithm Settings
+            </summary>
+        </member>
+        <member name="F:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService._mLAlertNotificationClient">
+             <summary>
+            Alert Notification SignalR Client  
+             </summary>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService.#ctor(DASS.AI.Edge.DataService.DataServiceProvider,DASS.AI.DataBus.Redis.IRedisDataBusPublisher,DASS.AI.DataBus.Redis.RedisDataBus,DASS.AI.Edge.ML.NotificationHub.MLAlertNotificationClient,Microsoft.Extensions.Options.IOptions{DASS.AI.Edge.ML.Model.AppSettings},Microsoft.Extensions.Options.IOptions{DASS.AI.Edge.ML.Model.AnomalyDetectionAlgorithm},Microsoft.Extensions.Options.IOptions{DASS.AI.Edge.ML.Model.SpikeDetectionAlgorithm},Microsoft.Extensions.Options.IOptions{DASS.AI.Edge.ML.Model.ChangePointDetectionAlgorithm},Microsoft.Extensions.Options.IOptions{DASS.AI.Edge.ML.Model.ForecastingAlgorithm})">
+            <summary>
+             MachineLearning Framework Service
+            </summary>
+            <param name="dataServiceProvider"></param>
+            <param name="redisDataBusPublisher"></param>
+            <param name="redisDataBus"></param>
+            <param name="mLAlertNotificationClient"></param>
+            <param name="settings"></param>
+            <param name="anomalyDetectionSettings"></param>
+            <param name="spikeDetectionSettings"></param>
+            <param name="changePointDetectionSettings"></param>
+            <param name="forecastingSettings"></param>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService.StartAsync(System.Threading.CancellationToken)">
+            <summary>
+            StartAsync
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService.StopAsync(System.Threading.CancellationToken)">
+            <summary>
+            StopAsync
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService.DeleteResultFiles">
+            <summary>
+            Delete Result Files
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DASS.AI.Edge.ML.Services.MachineLearningFrameworkService.ExecuteAsync(System.Threading.CancellationToken)">
+            <summary>
+            Do not implement this
+            </summary>
+            <param name="stoppingToken"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

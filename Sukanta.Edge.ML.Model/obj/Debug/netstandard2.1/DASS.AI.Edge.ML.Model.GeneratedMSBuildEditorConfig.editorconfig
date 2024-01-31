@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = DASS.AI.Edge.ML.Model
+build_property.ProjectDir = D:\ReusableComponent\EdgeMLFramework\DASS.AI.Edge.ML.Model\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

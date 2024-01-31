@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="Microsoft.ML" Version="3.0.0" />
+    <PackageReference Include="Microsoft.ML.TimeSeries" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\Sukanta.Reflection\Sukanta.Reflection.csproj" />
+    <ProjectReference Include="..\Sukanta.Edge.DataService\Sukanta.Edge.DataService.csproj" />
+    <ProjectReference Include="..\Sukanta.Edge.ML.Model\Sukanta.Edge.ML.Model.csproj" />
+    <ProjectReference Include="..\Sukanta.Edge.ML.NotificationHub\Sukanta.Edge.ML.NotificationHub.csproj" />
+  </ItemGroup>
+
+</Project>

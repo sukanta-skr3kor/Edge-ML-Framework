@@ -1,0 +1,25 @@
+{
+  "SpikeDetectionAlgorithm": {
+    "Enabled": true,
+    "TrainingDataSize": 2000,
+    "Confidence": 85,
+    "SeasonalitySize": 8,
+    "PValueSize": 5,
+    "BuildLocalModel": true,
+    "ModelFilePath": "./MLModels",
+    "ResultCsvFilePath": "./MLResults",
+    "NotificationEnabled": true,
+    "ResultCsvGenerationEnabled": true,
+    "ExecutionIntervalSeconds": 60,
+    "LocalModelBuildIntervalMinutes": 60,
+    "PredictionDataSize": 60,
+    "MachineParameters": [
+      {
+        "Id": "Temperature"
+      },
+      {
+        "Id": "Pressure"
+      }
+    ]
+  }
+}

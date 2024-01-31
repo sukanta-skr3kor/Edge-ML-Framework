@@ -1,0 +1,24 @@
+{
+  "ForecastingAlgorithm": {
+    "Enabled": true,
+    "TrainingDataSize": 2000,
+    "Confidence": 85,
+    "NumberOfValuesToPredit": 10,
+    "WindowSize": 60,
+    "BuildLocalModel": true,
+    "ModelFilePath": "./MLModels",
+    "ResultCsvFilePath": "./MLResults",
+    "NotificationEnabled": true,
+    "ResultCsvGenerationEnabled": true,
+    "ExecutionIntervalSeconds": 60,
+    "LocalModelBuildIntervalMinutes": 60,
+    "MachineParameters": [
+      {
+        "Id": "Temperature"
+      },
+      {
+        "Id": "Pressure"
+      }
+    ]
+  }
+}
