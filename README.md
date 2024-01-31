@@ -1,2 +1,2 @@
 # Edge-ML-Framework
-Its a Edge ML platform
+Its an Edge ML platform based on ML Dot Net library.
