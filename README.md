@@ -1,4 +1,4 @@
-# Edge-ML-Framework
+# Edge-ML(Machine Learning)-Framework
 It's an Edge Machine Learning(ML) platform based on ML Dot Net library.
 ![IIOT-Edge-SW-Stack](https://github.com/sukanta-skr3kor/Edge-ML-Framework/assets/109649478/091001dc-c2ed-46af-b58a-d3a61270bed9)
 
